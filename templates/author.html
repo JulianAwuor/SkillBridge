@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="author" content="templatemo">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      
+      {% load static %}
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <title>SkillBridge-profilepage</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <link rel="icon" href="{% static 'assets/images/bridge logo.jpg' %}">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/templatemo-liberty-market.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+<!--
+
+TemplateMo 577 Liberty Market
+
+https://templatemo.com/tm-577-liberty-market
+
+-->
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                         <img src="{% static 'assets/images/bridge logo.jpg' %}" style="max-width: 100px" alt="">
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li><a href="{% url 'index' %}">Home</a></li>
+                        <li><a href="{% url 'explore' %}">Explore</a></li>
+                        <li><a href="{% url 'author' %}" class="active">Profile</a></li>
+                        <li><a href="{% url 'create' %}">Create Yours</a></li>
+                    </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="page-heading normal-space">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1>Meet the SkillBridge Talent</h1>
+          <p class="fs-5">Discover a diverse community of passionate individuals ready to share their expertise and collaborate. Whether you're seeking graphic designers, developers, writers, or digital marketers, SkillBridge connects you with skilled professionals eager to make an impact.
+
+Explore their profiles, see their projects, and find the perfect match to bring your ideas to life. Together, we grow, learn, and succeed!</p>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-7">
+          <form id="search-form" name="gs" method="submit" role="search" action="#">
+            <div class="row">
+              <div class="col-lg-4">
+                <fieldset>
+                    <input type="text" name="keyword" class="searchText" placeholder="Type Something..." autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-3">
+                <fieldset>
+                    <select name="Category" class="form-select" aria-label="Default select example" id="chooseCategory" onchange="this.form.click()">
+                        <option selected>All Categories</option>
+                        <option type="checkbox" name="option1" value="Music">Music</option>
+                        <option value="Digital">Digital</option>
+                        <option value="Blockchain">Blockchain</option>
+                        <option value="Virtual">Virtual</option>
+                    </select>
+                </fieldset>
+              </div>
+              <div class="col-lg-3">
+                <fieldset>
+                    <select name="Price" class="form-select" aria-label="Default select example" id="chooseCategory" onchange="this.form.click()">
+                        <option selected>Available</option>
+                        <option value="Ending-Soon">Ending Soon</option>
+                        <option value="Coming-Soon">Coming Soon</option>
+                        <option value="Closed">Closed</option>
+                    </select>
+                </fieldset>
+              </div>
+              <div class="col-lg-2">
+                <fieldset>
+                    <button class="main-button">Search</button>
+                </fieldset>
+              </div>
+            </div>
+          </form>
+        </div>
+
+  <div class="author-page">
+    <div class="container">
+      <div class="row">
+
+
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <div class="line-dec"></div>
+            <h2> <em>Professional Mentors</em>.</h2>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="item">
+            <div class="row">
+              <div class="col-lg-12">
+
+                <img src="{% static 'assets/images/mentor3-lady.jpg' %}" alt="" style="border-radius: 20px; height: 250px;">
+                <h4>Aisha Mwikali</h4>
+              </div>
+              <div class="col-lg-12">
+                <div class="line-dec"></div>
+                <div class="row">
+                  <div class="col-6">
+                    <span>Specializing: <br> Web Design</span>
+                  </div>
+                  <div class="col-6">
+                    <span><br> Graphic Design</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="main-button">
+                  <a href="{% url 'aisha' %}">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="item">
+            <div class="row">
+              <div class="col-lg-12">
+
+                <img src="{% static 'assets/images/mentor4-male.jpg' %}" alt="" style="border-radius: 20px; height: 250px; ">
+                <h4>Kofi Mensah</h4>
+              </div>
+              <div class="col-lg-12">
+                <div class="line-dec"></div>
+                <div class="row">
+                  <div class="col-6">
+                    <span>Specializing: <br> App Development</span>
+                  </div>
+                  <div class="col-6">
+                    <span> <br> <strong></strong></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="main-button">
+                  <a href="">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="item">
+            <div class="row">
+              <div class="col-lg-12">
+
+                <img src="{% static 'assets/images/mentor5-male.jpg' %}" alt="" style="border-radius: 20px; height: 250px">
+                <h4>Thabo Dlamini</h4>
+              </div>
+              <div class="col-lg-12">
+                <div class="line-dec"></div>
+                <div class="row">
+                  <div class="col-6">
+                    <span>Specializing: <br> Digital Marketing</span>
+                  </div>
+                  <div class="col-6">
+                    <span> <br> <strong></strong></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="main-button">
+                  <a href="">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="item">
+            <div class="row">
+              <div class="col-lg-12">
+
+                <img src="{% static 'assets/images/mentor6-male.jpg' %}" alt="" style="border-radius: 20px; height: 250px;">
+                <h4>Elvis Abebe</h4>
+              </div>
+              <div class="col-lg-12">
+                <div class="line-dec"></div>
+                <div class="row">
+                  <div class="col-6">
+                    <span>Specializing: <br> Virtual Assistant</span>
+                  </div>
+                  <div class="col-6">
+                    <span><br> <strong></strong></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="main-button">
+                  <a href="">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="item">
+            <div class="row">
+              <div class="col-lg-12">
+
+                <img src="{% static 'assets/images/mentor1%20lady.jpg' %}" alt="" style="border-radius: 20px; height: 250px;">
+                <h4>Nia Okafor</h4>
+              </div>
+              <div class="col-lg-12">
+                <div class="line-dec"></div>
+                <div class="row">
+                  <div class="col-6">
+                    <span>Specializing: <br>Copywriting</span>
+                  </div>
+                  <div class="col-6">
+                    <span> </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="main-button">
+                  <a href="">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="item">
+            <div class="row">
+              <div class="col-lg-12">
+
+                <img src="{% static 'assets/images/mentor2-lady.jpg' %}" alt="" style="border-radius: 20px; height: 235px;">
+                <h4>Grace Atieno</h4>
+              </div>
+              <div class="col-lg-12">
+                <div class="line-dec"></div>
+                <div class="row">
+                  <div class="col-6">
+                    <span>Specializing: <br> Sign Language</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="main-button">
+                  <a href="{% url 'grace' %}">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="item">
+            <div class="row">
+              <div class="col-lg-12">
+
+                <img src="{% static 'assets/images/mentor7-indian.jpg' %}" alt="" style="border-radius: 20px; height: 250px;">
+                <h4>Arjun Patel</h4>
+              </div>
+              <div class="col-lg-12">
+                <div class="line-dec"></div>
+                <div class="row">
+                  <div class="col-6">
+                    <span>Specializing: <br> Cryptocurrency</span>
+                  </div>
+                  <div class="col-6">
+                    <span><br> <strong></strong></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="main-button">
+                  <a href="">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="item">
+            <div class="row">
+              <div class="col-lg-12">
+
+                <img src="{% static 'assets/images/mentor8-indian%20guy.jpg' %}" alt="" style="border-radius: 20px; height: 250px;">
+                <h4>Hans Muller</h4>
+              </div>
+              <div class="col-lg-12">
+                <div class="line-dec"></div>
+                <div class="row">
+                  <div class="col-6">
+                    <span>Specializing: <br> German</span>
+                  </div>
+                  <div class="col-6">
+                    <span><br> <strong></strong></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="main-button">
+                  <a href="">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="author-page">
+    <div class="container">
+      <div class="row">
+
+
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <div class="line-dec"></div>
+            <h2> <em>Exchange Partners</em>.</h2>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="item">
+            <div class="row">
+              <div class="col-lg-12">
+
+                <img src="{% static 'assets/images/learner1-lady.jpg' %}" alt="" style="border-radius: 20px; height: 250px;">
+                <h4>Fatima Yusuf</h4>
+              </div>
+              <div class="col-lg-12">
+                <div class="line-dec"></div>
+                <div class="row">
+                  <div class="col-6">
+                    <span>Specialty: <br> Web Design</span>
+                  </div>
+                  <div class="col-6">
+                    <span>Interest: <br> Graphic Design</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="main-button">
+                  <a href="">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="item">
+            <div class="row">
+              <div class="col-lg-12">
+
+                <img src="{% static 'assets/images/learner5-male.jpg' %}" alt="" style="border-radius: 20px; height: 250px;">
+                <h4>Baraka Otieno</h4>
+              </div>
+              <div class="col-lg-12">
+                <div class="line-dec"></div>
+                <div class="row">
+                  <div class="col-6">
+                    <span>Specialty: <br> Copywriting</span>
+                  </div>
+                  <div class="col-6">
+                    <span>Interest: <br> Digital Marketing</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="main-button">
+                  <a href="{% url 'brian' %}">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="item">
+            <div class="row">
+              <div class="col-lg-12">
+
+                <img src="{% static 'assets/images/learner6-male.jpg' %}" alt="" style="border-radius: 20px; height: 250px;">
+                <h4>Simba Chikosi</h4>
+              </div>
+              <div class="col-lg-12">
+                <div class="line-dec"></div>
+                <div class="row">
+                  <div class="col-6">
+                    <span>Specialty: <br> Graphic Design</span>
+                  </div>
+                  <div class="col-6">
+                    <span>Interest: <br> Web Development</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="main-button">
+                  <a href="">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="item">
+            <div class="row">
+              <div class="col-lg-12">
+
+                <img src="{% static 'assets/images/learner2-lady.jpg' %}" alt="" style="border-radius: 20px; height: 255px;">
+                <h4>Ama Kwarteng</h4>
+              </div>
+              <div class="col-lg-12">
+                <div class="line-dec"></div>
+                <div class="row">
+                   <div class="col-6">
+                    <span>Specialty: <br> French</span>
+                  </div>
+                  <div class="col-6">
+                    <span>Interest: <br> German</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="main-button">
+                  <a href="{% url 'ama' %}">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="item">
+            <div class="row">
+              <div class="col-lg-12">
+
+                <img src="{% static 'assets/images/learner7-male.jpg' %}" alt="" style="border-radius: 20px; height: 250px;">
+                <h4>Liam Walker</h4>
+              </div>
+              <div class="col-lg-12">
+                <div class="line-dec"></div>
+                <div class="row">
+                  <div class="col-6">
+                    <span>Specialty: <br> App Development</span>
+                  </div>
+                  <div class="col-6">
+                    <span>Interest: <br> Sign Language</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="main-button">
+                  <a href="">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="item">
+            <div class="row">
+              <div class="col-lg-12">
+
+                <img src="{% static 'assets/images/learner3-lady.jpg' %}" alt="" style="border-radius: 20px; height: 250px;">
+                <h4>Zola Ndlovu</h4>
+              </div>
+              <div class="col-lg-12">
+                <div class="line-dec"></div>
+                <div class="row">
+                  <div class="col-6">
+                    <span>Specilty: <br> Digital Marketing</span>
+                  </div>
+                  <div class="col-6">
+                    <span>Interest: <br> Copywriting</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="main-button">
+                  <a href="">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="item">
+            <div class="row">
+              <div class="col-lg-12">
+
+                <img src="{% static 'assets/images/learner8-male.jpg' %}" alt="" style="border-radius: 20px; height: 250px;">
+                <h4>Maximilan Bauer</h4>
+              </div>
+              <div class="col-lg-12">
+                <div class="line-dec"></div>
+                <div class="row">
+                  <div class="col-6">
+                    <span>Specialty: <br> Sign Language</span>
+                  </div>
+                  <div class="col-6">
+                    <span>Interest: <br> App Development</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="main-button">
+                  <a href="">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="item">
+            <div class="row">
+              <div class="col-lg-12">
+
+                <img src="{% static 'assets/images/learner4-lady.jpg' %}" alt="" style="border-radius: 20px; height: 255px;">
+                <h4>Emily Cater</h4>
+              </div>
+              <div class="col-lg-12">
+                <div class="line-dec"></div>
+                <div class="row">
+                  <div class="col-6">
+                    <span>Specialty: <br> German</span>
+                  </div>
+                  <div class="col-6">
+                    <span>Interest: <br> French</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="main-button">
+                  <a href="">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="create-nft">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="section-heading">
+            <div class="line-dec"></div>
+            <h2>Exchange Skills and Grow Together.</h2>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="main-button">
+            <a href="{% url 'create' %}">Create Your Profile</a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="item first-item">
+            <div class="number">
+              <h6>1</h6>
+            </div>
+
+            <h4>Set Up Your Skill Profile</h4>
+            <p>Highlight your expertise and the skills you're offering. Whether it's graphic design, coding, writing, or digital marketing, SkillBridge connects you with others seeking what you offer.</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="item second-item">
+            <div class="number">
+              <h6>2</h6>
+            </div>
+
+            <h4>Connect and Collaborate</h4>
+            <p>Find members of the community who have the skills you need. Exchange your expertise with theirs</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="item">
+
+            <h4>Experience and Build Relationship</h4>
+            <p>Work on real projects, improve your craft, and form lasting professional connections. Use these collaborations to grow your skills and expand your network..</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright © 2024 <a href="#">SkillBridge</a>Co., Ltd. All rights reserved.
+          &nbsp;&nbsp;
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+
+  <script src="{% static 'assets/js/isotope.min.js' %}"></script>
+  <script src="{% static 'assets/js/owl-carousel.js' %}"></script>
+
+  <script src="{% static 'assets/js/tabs.js' %}"></script>
+  <script src="{% static 'assets/js/popup.js' %}"></script>
+  <script src="{% static 'assets/js/custom.js' %}"></script>
+  </body>
+</html>

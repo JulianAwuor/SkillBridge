@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="author" content="templatemo">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      {% load static %}
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <title>SkillBridge-Aishaprofile</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+       
+      <link rel="icon" href="{% static 'assets/images/bridge logo.jpg' %}">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/templatemo-liberty-market.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+<!--
+
+TemplateMo 577 Liberty Market
+
+https://templatemo.com/tm-577-liberty-market
+
+-->
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                        <img src="{% static 'assets/images/bridge logo.jpg' %}" style="max-width: 100px" alt="">
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li><a href="{% url 'index' %}">Home</a></li>
+                        <li><a href="{% url 'explore' %}">Explore</a></li>
+                        <li><a href="{% url 'aisha' %}" class="active">Aisha</a></li>
+                        <li><a href="{% url 'author' %}">Profile</a></li>
+                        <li><a href="{% url 'create' %}">Create Yours</a></li>
+                    </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="page-heading normal-space">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2>AISHA MWANGI</h2>
+          <h6>Kenya</h6>
+          <span> <a href="">aishamwangi@gmail.com</a></span>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="item-details-page">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <div class="line-dec"></div>
+
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="left-image">
+            <img src="{% static 'assets/images/mentor3-lady.jpg' %}" alt="" style="border-radius: 20px;">
+          </div>
+        </div>
+        <div class="col-lg-5 align-self-center">
+          <h4>About Me</h4>
+
+          <p>I’m a professional web designer dedicated to not only creating stunning, functional websites but also mentoring aspiring designers who want to excel in this field. Whether you’re looking to learn the basics of web design, improve your skills, or get guidance on real-world projects, I’m here to help. My mentorship program is tailored to suit your individual needs, from mastering tools like HTML, CSS,Java,Python,Kotlin and React and responsive design to understanding client requirements and delivering top-notch results. Let’s work together to build your skills and confidence in web design</p>
+            <h4>Experiences</h4>
+            <h6>Web Design Mentor & Consultant
+Freelance | 2021 – Present</h6>
+
+          <p>I’ve helped dozens of aspiring web designers navigate the world of design with tailored mentorship and hands-on guidance. I specialize in HTML, CSS, JavaScript, and responsive design. Whether you're just starting or looking to enhance your portfolio, I provide insights that empower you to grow your skills and create stunning websites.</p>
+            <h6>Web Designer & Developer
+Tech Innovators Co. | 2019 – 2021</h6>
+
+          <p>I led the web design department, overseeing projects from concept to execution. Working with cross-functional teams, I designed user-friendly websites that not only looked great but also delivered a seamless user experience. My work contributed to increasing client satisfaction and boosting website engagement by 35%.</p>
+
+
+          <div class="row">
+            <div class="col-3">
+              <span class="bid">
+                <br><strong>Mentorship</strong><br><em>ksh.50,000</em>
+              </span>
+            </div>
+            <div class="col-4">
+              <span class="owner">
+                <br><strong>Duration</strong><br><em>Three Months</em>
+              </span>
+            </div>
+            <div class="col-5">
+              <span class="ends">
+                <br><strong>Contact</strong><br><em><a href="" class="text-white">aishamwangi@gmail.com</a>/2547304603920</em>
+              </span>
+            </div>
+          </div>
+          <form action="submit">
+            <label for="quantity-text">Book Session:</label>
+            <input placeholder="KSH" class="quantity-text">
+            <button type="submit" id="form-submit" class="main-button"><a href="{% url 'pay' %}">make payment</a> </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="create-nft">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="section-heading">
+            <div class="line-dec"></div>
+            <h2>Reviews</h2>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="main-button">
+
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="item first-item">
+            <div class="number">
+              <h6>1</h6>
+            </div>
+
+            <h4>Mark T...Web Design Student</h4>
+            <p>Aisha is an exceptional mentor! Her ability to break down complex web design concepts into easy-to-understand steps has truly helped me grow. Thanks to her guidance, I launched my first website and it’s already gaining traction</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="item second-item">
+            <div class="number">
+              <h6>2</h6>
+            </div>
+
+            <h4>Sophie..., Freelance Web Designer</h4>
+            <p>As a professional web designer, Aisha’s mentorship provided me with valuable insights into improving my workflow. I learned how to develop websites that not only look stunning but also function flawlessly across all devices. Highly recommend!</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="item">
+
+            <h4>Mark Ochieng</h4>
+            <p>I took Aisha’s course on web design, and I can honestly say it changed my career. The skills I learned have allowed me to land multiple client projects, and I now feel confident building websites from scratch</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+           <p>Copyright © 2024 <a href="#">SkillBridge</a>Co., Ltd. All rights reserved.
+          &nbsp;&nbsp;
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+
+  <script src="{% static 'assets/js/isotope.min.js' %}"></script>
+  <script src="{% static 'assets/js/owl-carousel.js' %}"></script>
+
+  <script src="{% static 'assets/js/tabs.js' %}"></script>
+  <script src="{% static 'assets/js/popup.js' %}"></script>
+  <script src="{% static 'assets/js/custom.js' %}"></script>
+  </body>
+</html>
+                    

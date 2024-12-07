@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="author" content="templatemo">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      {% load static %}
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <title>SkillBridge-Graceprofile</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+      <link rel="icon" href="{% static 'assets/images/bridge logo.jpg' %}">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/templatemo-liberty-market.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+<!--
+
+TemplateMo 577 Liberty Market
+
+https://templatemo.com/tm-577-liberty-market
+
+-->
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                        <img src="{% static 'assets/images/bridge logo.jpg' %}" style="max-width: 100px" alt="">
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li><a href="{% url 'index' %}">Home</a></li>
+                        <li><a href="{% url 'explore' %}">Explore</a></li>
+                        <li><a href="{% url 'grace' %}" class="active">Grace</a></li>
+                        <li><a href="{% url 'author' %}">Profile</a></li>
+                        <li><a href="{% url 'create' %}">Create Yours</a></li>
+                    </ul>
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="page-heading normal-space">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2>GRACE ATIENO</h2>
+          <h6>Kenya</h6>
+          <span> <a href="">graceatieno@gmail.com</a></span>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="item-details-page">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <div class="line-dec"></div>
+
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="left-image">
+            <img src="{% static 'assets/images/mentor2-lady.jpg' %}" alt="" style="border-radius: 20px;">
+          </div>
+        </div>
+        <div class="col-lg-5 align-self-center">
+          <h4>About Me</h4>
+
+          <p>  I’m a passionate and dedicated sign language instructor committed to empowering individuals through the language of signs. Whether you’re a beginner looking to learn the basics of sign language, or you want to deepen your skills for personal or professional growth, I’m here to guide you every step of the way. My mentorship program is designed to cater to your learning needs, from mastering the alphabet and common phrases to developing fluency in sign language conversations. Let's work together to break communication barriers and open doors to a more inclusive world!</p>
+            <h4>Experiences</h4>
+            <h6>Sign Language Mentor & Consultant
+Freelance | 2021 – Present</h6>
+
+          <p>I’ve worked with numerous individuals and organizations to improve communication through sign language. With personalized mentorship, I teach beginners to advanced learners the art of sign language, helping them break down communication barriers. I specialize in American Sign Language (ASL), fingerspelling, and basic conversational skills, empowering learners to confidently communicate in various settings.</p>
+            <h6>Sign Language Instructor
+Inclusive Learning Academy | 2019 – 2021</h6>
+
+          <p>I led sign language courses for students of all ages, creating an engaging and supportive environment for them to master sign language. I focused on building practical communication skills that students could apply in everyday interactions. My work contributed to increasing accessibility and inclusion in the community, enabling more people to connect through the power of sign language.</p>
+
+
+          <div class="row">
+            <div class="col-3">
+              <span class="bid">
+                <br><strong>Mentorship</strong><br><em>ksh.30,000</em>
+              </span>
+            </div>
+            <div class="col-4">
+              <span class="owner">
+                <br><strong>Duration</strong><br><em>Three Months</em>
+              </span>
+            </div>
+            <div class="col-5">
+              <span class="ends">
+                <br><strong>Contact</strong><br><em><a href="" class="text-white">graceatieno@gmail.com</a>/2547304603920</em>
+              </span>
+            </div>
+          </div>
+          <form action="submit">
+            <label for="quantity-text">Book Session:</label>
+            <input placeholder="KSH" class="quantity-text">
+            <button type="submit" id="form-submit" class="main-button"><a href="{% url 'pay' %}">Make Payment</a></button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="create-nft">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="section-heading">
+            <div class="line-dec"></div>
+            <h2>Reviews</h2>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="main-button">
+
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="item first-item">
+            <div class="number">
+              <h6>1</h6>
+            </div>
+
+            <h4>Sarah.W...Community Outreach Coordinator</h4>
+            <p>I enrolled in Grace’s sign language course, and it completely transformed my approach to communication. The skills I’ve gained have helped me work more inclusively with the Deaf community, and I now feel confident engaging in conversations using sign language.</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="item second-item">
+            <div class="number">
+              <h6>2</h6>
+            </div>
+
+            <h4>David.M..., Healthcare Professional</h4>
+            <p>Grace's mentorship has been invaluable. She taught me how to communicate effectively using sign language, which has helped me build stronger relationships with clients and colleagues. I highly recommend her mentorship program</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="item">
+
+            <h4>Mary.G Sign Language Student</h4>
+            <p>Grace is an outstanding mentor! She has a unique ability to break down sign language concepts in a way that’s easy to understand and apply. Thanks to her guidance, I’ve become much more confident in my communication skills</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+           <p>Copyright © 2024 <a href="#">SkillBridge</a>Co., Ltd. All rights reserved.
+          &nbsp;&nbsp;
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+
+  <script src="{% static 'assets/js/isotope.min.js' %}"></script>
+  <script src="{% static 'assets/js/owl-carousel.js' %}"></script>
+
+  <script src="{% static 'assets/js/tabs.js' %}"></script>
+  <script src="{% static 'assets/js/popup.js' %}"></script>
+  <script src="{% static 'assets/js/custom.js' %}"></script>
+  </body>
+</html>
